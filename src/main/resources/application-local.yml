@@ -1,0 +1,18 @@
+server:
+  port: 20000
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty.http.client: DEBUG
+
+spring:
+  data:
+    redis:
+      host: http://localhost:10000
+      port: 31001
+
+codeboard:
+  auth: http://localhost:10100
+  member: http://localhost:10098
+  blog: http://localhost:10099

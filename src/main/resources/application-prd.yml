@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.cloud.gateway: ERROR
+    reactor.netty.http.client: ERROR
+
+spring:
+  data:
+    redis:
+      host: codeboard-auth-redis
+      port: 6379
+
+codeboard:
+  auth: http://codeboard-auth:8080
+  member: http://codeboard-member:8080
+  blog: http://codeboard-blog:8080
+
