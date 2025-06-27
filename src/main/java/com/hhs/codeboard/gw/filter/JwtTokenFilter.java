@@ -42,7 +42,6 @@ public class JwtTokenFilter extends AbstractGatewayFilterFactory<JwtTokenFilter.
     private static final String ACCESS_TOKEN_KEY = "CB_AT";
 	private static final String REFRESH_TOKEN_KEY = "CB_RT";
 
-    @Getter
     public record Config(FilterType filterType) {}
 
     // 요청이 들어오면 토큰이 있는지 확인.
